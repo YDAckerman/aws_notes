@@ -23,4 +23,11 @@
   - ACL is stateless and defaults to letting everything in.
   - security group is stateful and defaults to blocking everything
 
-* 
+* Global Networking
+  - DNS: phonebook of internet. customer sends dns request, customer
+    dns resolver asks company dns server, and it provides the server
+    ip address.
+  - Amazon Route 53 is a DNS web service. you can register new domain
+    names and transfer DNS records for existing domains names directly in R53.
+
+
