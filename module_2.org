@@ -1,0 +1,86 @@
+* Amazon EC2
+  - EC2 is the service used to gain access to virtual servers
+
+  - You have access to VIRTUAL MACHINES on a server potentially
+    hosting multiple other virtual machines. The resources are managed
+    by a hypervisor. This model of resource management is called
+    multitenancy: sharing underlying hardware between virtual
+    machines.
+
+  - huge variety of ec2 configurations (OS, etc.)
+
+  - Vertical scaling: ability to give an instance more/less resources
+    depending on need.
+
+  - networking: types of requests (public/private etc) are all
+    adjustable.
+
+  - Compute as a service (CaaS)
+
+* EC2 Pricing
+
+  - On Demand
+    run continuously until you stop them. You pay for time in use.
+    
+  - Savings Plans
+    commiting for a 1-3 year term. any usage up to the commitment is
+    charged at a discounted rate. Ideal for use cases with a
+    consistent amount of work.
+    
+  - Reserved Instances
+    a billing discount applied to On Demand usage.
+    
+  - Spot Instances
+    unused compute capacity available at a discount, but with a
+    caveat: resources can be reclaimed by aws with 2 min warning. good
+    for extremely flexible work that can withstand interruptions.
+    
+  - Dedicated Hosts
+    physical servers with AWS EC2 capacity dedicated to your use.
+
+* Scaling on EC2
+  - making sure that instance availability meets demand.
+  - dynamic scaling - responds to changing demand
+  - predictive scaling - automatically scales based on predicted
+    demand
+  - dynamic and predictive scaling can be used simultaneously
+
+  - minimum capacity, desired capacity, and maximum capacity.
+
+* Elastic Load Balancing
+  - manages incoming requests sending them to available servers. New
+    servers notify the elb that they are read, and the elb then sends
+    them requests. As the load drops, the elb reallocates requests as
+    unnecessary servers are deactivated.xs
+
+* Messaging and queueing
+  (loosely coupled architectures)
+  - SQS
+    - send, store, and receive messages between software components at
+      any volume
+    - payload is data contained within a message
+  - SNS
+    - pub-sub model.
+    - topics that are subscribed to. messages within the topics are
+      sent to all subscribers of that topic.
+    - subscribers need not be clients, but can be servers, email
+      address, lambda functions, etc.
+
+* Additional compute Services
+  - Lambda - run code without a server with a pre-configured trigger
+
+  - Container (docker) Orchestration Tools:
+    - Elastic Constainer Service
+    - Elastic Kubernetes Service
+
+  - Containers are packages for code
+
+  - Fargate
+
+
+  - traditional applications with need of full OS access: EC2
+  - short running, service-oriented, event driven applications with no
+    provisioning or server management: Lambda
+  - Running Docker & Container Orchestration: ECS or EKS
+    - running on EC2 instances that you manage
+    - or Fargate (serverless and managed for you)

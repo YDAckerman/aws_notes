@@ -1,0 +1,26 @@
+
+* Amazon virtual private cloud
+  - lets you provision a logically isolated section of the cloud where
+    you can launch resources in a virtual network with public and
+    private access (with/without internet). these layers are known as subnets.
+  - your own private network in aws. you provide an ip range for your
+    resources. Can put ec2 instances in here, for example.
+  - things must be placed into subnets - regions with different
+    permissions/access etc.
+
+  - to allow public traffic, you must attach an internet gateway to
+    your vpc.
+  - can allow a private gateway, which only allows people coming from
+    an approved network. Virtual private gateway.
+  - you've got internet gateways and virtual private gateways.
+    a vpg enables you to establish a vpn between your vpc and a
+   private network. it only allows traffic from an approved network.
+  - AWS Direct Connect is a dedicated private connection between your
+    data center and a vpc. this is a liter, physical connection that
+    can save on latency and bandwidth. 
+
+* ACL vs Security Group
+  - ACL is stateless and defaults to letting everything in.
+  - security group is stateful and defaults to blocking everything
+
+* 

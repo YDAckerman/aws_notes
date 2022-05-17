@@ -1,0 +1,35 @@
+* AWS Global Infrastructure
+
+  - proximity:
+    must consider latency
+  - availability:
+    amazon braket might not be available everywhere
+  - pricing:
+    some places are more expensive to operate out of.
+
+* Availability Zones (AV)
+  - represent one or more data centers in a region
+  - provide disaster redundancy
+  - recommended to run instances in at least 2 AVs
+
+
+* Edge Locations
+  - Content Delivery Network (CDN)
+    - Amazon CloundFront
+  - CloudFront uses edge locations:
+    - store cached copies of your content closer to your users
+    - also runs a DNS that helps route customers (also not totally sure)
+  - AWS Outposts: extend AWS infrastructure and service to your
+    on-premise data center
+
+* How to provision AWS Resources
+  - Throug APIs
+    - command line interface
+    - management console
+    - SDKs
+    - others
+    - AWS Elastic Beanstalk
+      - let's you setup provisioning scenarios and run/reproduce at will
+    - AWS Cloud Formation
+      - templates to set up a bunch of resources
+      - allows you to treat infrastructure as code

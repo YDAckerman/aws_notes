@@ -1,0 +1,38 @@
+
+
+* client-server model
+  - client makes request to server (this could be anything, given
+    context & permissions)
+  - server on aws is EC2 (amazon elastic compute cloud)
+    - validates the request is legitimate and provides response.
+
+* pay for what you need. 
+
+
+* Cloud Computing:
+  - on-demand delivery of it resources with pay-as-you-go pricing
+  - undifferentiated heavy-lifting of IT - don't have to setup MYSQL
+    and such. AWS does that for you.
+
+
+* Cloud-based deployment
+  - run all operations in the cloud
+  - For example, a company might create an application consisting of
+    virtual servers, databases, and networking components that are
+    fully based in the cloud.
+
+* On-Premise Deployment (private cloud deployment)
+  - run all operations on dedicated in-house equipment.
+  - much like legacy IT, but helps to increase resource utilization
+
+* Hybrid Deployment
+  - run operations on a combination of cloud and in-house equipment
+  - some cloud based resources are connected to on-premise
+    infrastructure. maybe for maintainance purposes, etc.
+
+* Benefits of cloud computing:
+  - trade upfront costs for variable cost.
+  - less focus on infrastructure maintainance more focus on
+    applications and products.
+  - Scales (no need to know before)
+  - new resources available immediately when needed
